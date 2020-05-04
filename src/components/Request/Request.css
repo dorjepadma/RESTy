@@ -1,5 +1,4 @@
-Request {
-  input [ type="radio"] {
-    display: none;
+.Request 
+  input[type="radio"] {
+    opacity: 0;
   }
-}
