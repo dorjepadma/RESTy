@@ -1,8 +1,18 @@
 .Request 
+  input {
+    display:block;
+  }
+  label {
+    padding: .2rem .4rem;
+    margin: 2rem .5rem;
+    cursor: pointer;
+  }
   input[type="radio"] {
     opacity: 0;
   }
-
+  textarea {
+    display:block;
+  }
   input[type="radio"]:checked + label {
     background-color: tan;
     opacity: 90%;
