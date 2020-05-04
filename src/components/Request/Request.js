@@ -11,42 +11,46 @@ const Request = ({ url, body, onChange, onSubmit }) => (
       </label>
       
       <>
-        
         <input 
-          type="radio" 
-          name="method" 
-          value="get" 
-          onChange={onChange}
-        /> 
-        <label> GET </label>
-        <input 
+          id="POST"
           type="radio" 
           name="method" 
           value="post"
           onChange={onChange}
         /> 
-        <label> POST </label>
+        <label htmlFor="POST"> POST </label>
         <input 
+          id="GET"
+          type="radio" 
+          name="method" 
+          value="get" 
+          onChange={onChange}
+        /> 
+        <label htmlFor="GET"> GET </label>
+        <input 
+          id="PUT"
           type="radio" 
           name="method" 
           value="put"
           onChange={onChange} 
         />
-        <label> PUT </label>
+        <label htmlFor="PUT"> PUT </label>
         <input 
+          id="PATCH"
           type="radio" 
           name="method" 
           value="patch" 
           onChange={onChange}
         /> 
-        <label> PATCH </label>
+        <label htmlFor="PATCH"> PATCH </label>
         <input 
+          id="DELETE"        
           type="radio" 
           name="method" 
           value="delete"
           onChange={onChange}
         /> 
-        <label>DELETE </label>
+        <label htmlFor="DELETE">DELETE </label>
       </>
 
       <textarea 
