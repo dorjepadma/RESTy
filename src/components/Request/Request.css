@@ -11,10 +11,14 @@
     opacity: 0;
   }
   textarea {
-    display:block;
+    display: block;
+    margin: 1rem 0;
   }
   input[type="radio"]:checked + label {
     background-color: tan;
     opacity: 90%;
     border-radius: 25%;
+  }
+  button {
+    display: block;
   }
