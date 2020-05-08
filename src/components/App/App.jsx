@@ -1,7 +1,7 @@
 import React from 'react';
-import Request from '../Request/Request';
+import Resty from '../../container/Resty';
 
 export default function App() {
-  return <Request />;
+  return <Resty />;
 }
   
