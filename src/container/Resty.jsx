@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Request from '../components/Request/Request';
+import { makeRequest } from '../services/Request';
 
 const Resty = () => {
   const [url, setUrl] = useState('');
@@ -14,9 +15,10 @@ const Resty = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    console.log('you should make a request to', url, method, body);
-
+    makeRequest(url, method, body)
+      .then(json => console.log(json));
   };
+  
   return (
     <>
       <Request

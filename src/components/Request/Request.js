@@ -63,7 +63,7 @@ const Request = ({ url, method, body, onChange, onSubmit }) => (
     >
     </textarea>
 
-    <button type='submit'>Submit</button>
+    <button type='submit'>Request</button>
   </form>
 );
 
