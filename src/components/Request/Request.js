@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import styles from './Request.css';
+import styles from './Request.css';
 import Header from '../Header';
 
 const Request = ({ url, method, body, onChange, onSubmit }) => (
 
-  <form onSubmit={onSubmit}>
+  <form className={styles} onSubmit={onSubmit}>
     <Header></Header>
     <label> URL:
       <input type='text' name='url' value={url} onChange={onChange} />
