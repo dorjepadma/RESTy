@@ -22,5 +22,5 @@ HistoryList.propTypes = {
       method: PropTypes.string.isRequired
     })).isRequired
 
-}
+};
 export default HistoryList; 
