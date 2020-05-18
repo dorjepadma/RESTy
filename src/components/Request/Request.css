@@ -1,0 +1,34 @@
+.Request 
+  input {
+    display:block;
+  }
+  label {
+    padding: .2rem .4rem;
+    margin: 2rem .5rem;
+    cursor: pointer;
+  }
+  input[type="radio"] {
+    opacity: 0;
+  }
+  textarea {
+    display: block;
+    margin: 1rem 0;
+    border: black;
+  }
+  input[type="radio"]:checked + label {
+    background-color: rgb(241, 178, 94);
+    opacity: 90%;
+    border-radius: 25%;
+  }
+  button {
+    display: block;
+  }
+  body {
+    background-color: rgb(5, 130, 172);
+      color:black;
+      padding: 5rem;
+      font-family: Helvetica;
+      text-align: left;
+  
+    
+  }
