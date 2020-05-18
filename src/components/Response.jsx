@@ -1,13 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useRest } from '../hooks/RestProvider';
 
-const Response = ({ response }) => (
-  <pre>
-    {JSON.stringify(response, null, 2)}
-  </pre>
-);
-Response.propTypes = {
-  response: PropTypes.object.isRequired
+const Response = () => {
+  const { response } = useRest();
+  return (
+    <pre>
+      {JSON.stringify(response, null, 2)}
+    </pre>
+  );
 };
+
 
 export default Response;
