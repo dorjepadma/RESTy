@@ -5,7 +5,7 @@ const RestContext = createContext();
 export const RestProvider = ({ children }) => {
 
   return (
-      <RestContext.Provider value=()>
+      <RestContext.Provider value={}>
       {children}
       </RestContext.Provider>
   )
