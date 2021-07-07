@@ -1,7 +1,6 @@
 {
-  "name": "RESTy",
+  "name": "resty",
   "version": "1.0.0",
-  "description": "",
   "main": "dist/index.js",
   "jest": {
     "setupFilesAfterEnv": [
@@ -25,7 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-router-dom": "^5.1.2"
+    "node": "^14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
